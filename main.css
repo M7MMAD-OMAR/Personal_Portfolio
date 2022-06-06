@@ -1,7 +1,92 @@
 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+
+/*==========================
+        start  Header
+  ========================== */
+
+header {
+    background-color: #777;
+    padding: 15px 100px;
+}
+
+#logo {
+    width: 120px;
+    display: inline-block;
+}
+
+#header_title {
+    display: inline-block;
+}
+
+
+/*==========================
+        End  Header
+  ========================== */
+
+
+/*==========================
+        start  main
+  ========================== */
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 30%;
+    border: rgb(255, 0, 0) solid;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left_top {
+    display: flex;
+    justify-content: center;
+}
+
+.my_photo {
+    margin: 30px auto;
+    width: 300px;
+    border: #333 solid 0.5px;
+    border-radius: 50%;
+}
+
+.menu {
+    border: #333 solid;
+    text-align: center;
+}
+
+.li_menu {
+    padding: 10px;
+    /* border: solid black; */
+    /* text-decoration: none;
+    text-decoration-style: none; */
+}
+
+.a_menu {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+
+}
+
+.right{
+    background-image: url(/images/background.jpg);
+    border: #333 3px solid;
+    width: 100%;
+
+}
+/*==========================
+        End  main
+  ========================== */
