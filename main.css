@@ -19,7 +19,7 @@
 body {
   line-height: 1.5;
   font-size: 16px;
-  font-family: 'Poppins' sans-serif;
+  font-family: "Poppins" sans-serif;
 }
 
 ::before,
@@ -37,11 +37,7 @@ ul {
   display: block;
   padding: 0 30px;
   opacity: 1;
-  /* position: fixed; */
-  /* left: 270px; */
-  /* top: 0;
-  right: 0;
-  z-index: 1; */
+
 }
 
 .hidden {
@@ -50,7 +46,6 @@ ul {
 
 .main_content {
   padding-left: 270px;
-
 }
 .padd_15 {
   padding-left: 15px;
@@ -60,9 +55,7 @@ ul {
 .container {
   max-width: 1100px;
   width: 100%;
-
 }
-
 
 .section .container {
   padding-top: 60px;
@@ -83,7 +76,7 @@ ul {
 }
 
 .section_title h2::before {
-  content: '';
+  content: "";
   height: 4px;
   width: 50px;
   background-color: var(--skin_color);
@@ -93,7 +86,7 @@ ul {
 }
 
 .section_title h2::after {
-  content: '';
+  content: "";
   height: 4px;
   width: 25px;
   background-color: var(--skin_color);
@@ -102,7 +95,6 @@ ul {
   left: 0;
   margin-top: 8px;
 }
-
 
 .row {
   display: flex;
@@ -133,8 +125,6 @@ ul {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-
-
 /* aside */
 .aside {
   width: 270px;
@@ -150,7 +140,6 @@ ul {
   align-items: center;
   z-index: 10;
 }
-
 
 .aside .logo {
   position: absolute;
@@ -169,12 +158,12 @@ ul {
 }
 
 .aside .logo a span {
-  font-family: 'Clicker Script', cursive;
+  font-family: "Clicker Script", cursive;
   font-size: 40px;
 }
 
 .aside .logo a::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -185,7 +174,7 @@ ul {
 }
 
 .aside .logo a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -210,7 +199,6 @@ ul {
   justify-content: center;
 }
 .aside .nav-toggler span {
-
   height: 2px;
   width: 18px;
   background: var(--skin_color);
@@ -218,31 +206,28 @@ ul {
   position: relative;
 }
 
-
 .aside .nav-toggler span::before {
-  content: '';
+  content: "";
   height: 2px;
   width: 18px;
   background: var(--skin_color);
   position: absolute;
   top: -6px;
-  left: 0 ;
+  left: 0;
 }
 
 .aside .nav-toggler span::after {
-  content: '';
+  content: "";
   height: 2px;
   width: 18px;
   background: var(--skin_color);
   position: absolute;
   top: 6px;
-  left: 0 ;
+  left: 0;
 }
-
 
 .aside .nav {
   margin-top: 50px;
-
 }
 
 .aside .nav li {
@@ -259,7 +244,6 @@ ul {
   padding: 5px 15px;
 }
 
-
 .aside .nav li a.active {
   color: var(--skin_color);
 }
@@ -267,7 +251,6 @@ ul {
 .aside .nav li a i {
   margin-right: 15px;
 }
-
 
 /* home */
 
@@ -283,12 +266,13 @@ ul {
   max-width: 60%;
 }
 
-h3.hello {font-size: 28px;
-margin: 15px 0;
+h3.hello {
+  font-size: 28px;
+  margin: 15px 0;
 }
 
 h3.hello span {
-  font-family: 'Clicker Script', cursive;
+  font-family: "Clicker Script", cursive;
   font-size: 30px;
   font-weight: 700;
   color: var(--skin_color);
@@ -309,8 +293,6 @@ h3.my_profession {
   color: var(--text_black_700);
 }
 
-
-
 .home .home_img {
   flex: 0 0 40%;
   max-width: 40%;
@@ -319,8 +301,8 @@ h3.my_profession {
 }
 
 .home_img::after {
-  content: '';
-  position:absolute;
+  content: "";
+  position: absolute;
   height: 80px;
   width: 80px;
   border-bottom: 10px solid var(--skin_color);
@@ -330,8 +312,8 @@ h3.my_profession {
 }
 
 .home_img::before {
-  content: '';
-  position:absolute;
+  content: "";
+  position: absolute;
   height: 80px;
   width: 80px;
   border-top: 10px solid var(--skin_color);
@@ -340,25 +322,21 @@ h3.my_profession {
   top: -40px;
 }
 
-
 .home .home_img img {
   margin: auto;
   border-radius: 5px;
   height: 400px;
 }
 
-
 /* About */
 .about .about_content {
   flex: 0 0 100%;
   max-width: 100%;
-
 }
 
 .about .about_content .about_text {
-  flex: 0 0  100%;
+  flex: 0 0 100%;
   max-width: 100%;
-
 }
 
 .about .about_content .about_text h3 {
@@ -370,7 +348,6 @@ h3.my_profession {
 
 .about .about_content .about_text h3 span {
   color: var(--skin_color);
-  
 }
 
 .about .about_content .about_text p {
@@ -378,9 +355,6 @@ h3.my_profession {
   line-height: 25px;
   color: var(--text_black_700);
 }
-
-
-
 
 .about .about_content .personal_info {
   flex: 0 0 60%;
@@ -391,7 +365,6 @@ h3.my_profession {
 .about .about_content .personal_info .info_item {
   flex: 0 0 50%;
   max-width: 50%;
-
 }
 
 .about .about_content .personal_info .info_item p {
@@ -417,13 +390,10 @@ h3.my_profession {
   margin-top: 10px;
 }
 
-
-
 .about .about_content .skills {
-  flex: 0 0  40%;
+  flex: 0 0 40%;
   max-width: 40%;
   margin-top: 40px;
-
 }
 
 .about .about_content .skills .skill_item {
@@ -448,7 +418,7 @@ h3.my_profession {
 }
 
 .about .about_content .skill_item {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .about .about_content .skill_item .progress .progress_in {
@@ -471,7 +441,7 @@ margin-bottom: 30px;
 
 .about .about_content .education,
 .about .about_content .experience {
-  flex: 0 0  50%;
+  flex: 0 0 50%;
   max-width: 50%;
   margin-top: 40px;
 }
@@ -486,7 +456,6 @@ margin-bottom: 30px;
 .about .about_content .timeline_box {
   flex: 0 0 100%;
   max-width: 100%;
-
 }
 .about .about_content .timeline {
   background-color: var(--bg_black_100);
@@ -498,7 +467,6 @@ margin-bottom: 30px;
   position: relative;
 }
 
-
 .about .about_content .timeline .timeline_item {
   position: relative;
   padding-left: 37px;
@@ -506,12 +474,11 @@ margin-bottom: 30px;
 }
 
 .about .about_content .timeline .timeline_item:last-child {
- padding-bottom: 0;
+  padding-bottom: 0;
 }
 
-
 .about .about_content .timeline .timeline_item::before {
-  content: '';
+  content: "";
   width: 1px;
   position: absolute;
   height: 100%;
@@ -560,14 +527,12 @@ margin-bottom: 30px;
 
 .service .container {
   padding-bottom: 40px;
-
 }
 
 .service .service_item {
   margin-bottom: 30px;
   flex: 0 0 33.33%;
   max-width: 33.33%;
-
 }
 
 .service .service_item .service_item_inner {
@@ -576,13 +541,12 @@ margin-bottom: 30px;
   border-radius: 10px;
   padding: 30px 15px;
   text-align: center;
-  transition:  all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .service .service_item .service_item_inner:hover {
   box-shadow: 0 0 35px rgba(48, 46, 77, 0.15);
 }
-
 
 .service .service_item .service_item_inner .icon {
   height: 60px;
@@ -632,7 +596,6 @@ margin-bottom: 30px;
   flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 40px;
-
 }
 
 .portfolio .portfolio_heading h2 {
@@ -677,7 +640,6 @@ margin-bottom: 30px;
   max-width: 25%;
   text-align: center;
   margin-bottom: 60px;
-
 }
 
 .contact .contact_info_item .icon {
@@ -702,4 +664,97 @@ margin-bottom: 30px;
   font-weight: 400;
 }
 
+.contact .contact_form {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
 
+.contact .contact_form .col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.contact .contact_form .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+
+
+}
+.contact .contact_form .form_item {
+  margin-bottom: 30px;
+}
+
+.contact .contact_form .form_item .form_control {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--bg_black_100);
+  border: 1px solid var(--bg_black_50);
+  padding: 10px 25px;
+  font-size: 16px;
+  color: var(--text_black_700);
+  transition: all 0.3 ease;
+}
+.contact .contact_form .form_item .form_control:focus {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+
+}
+
+.contact .contact_form .form_item textarea.form_control {
+  height: 140px;
+  max-width: 100%;
+  min-height: 40px;
+}
+
+.contact .contact_form .btn {
+  height: 50px;
+  padding: 0 50px;
+}
+
+@media (max-width:1250px) {
+  .aside {
+    left: -270px;
+  }
+  .main_content {
+    padding-left: 0;
+  }
+  .section { 
+    padding-left: 60px;
+  }
+  .about .about_content .personal_info .info_item p span {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media (max-width:991px) {
+  .contact .contact_info_item,
+  .portfolio .portfolio_item,
+  .service .service_item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .home .home_info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home .home_img {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+  .contact .contact_info_item,
+  .contact .contact_form .col-6,
+  .portfolio .portfolio_item,
+  .service .service_item,
+  .about .about_content .experience,
+  .about .about_content .education,
+  .about .about_content .skills,
+  .about .about_content .personal_info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+}
