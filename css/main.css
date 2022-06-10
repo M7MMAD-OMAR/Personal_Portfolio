@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --bg_black_900: #f2f2fc;
-  --bg_black_100: #fdf9ff;
-  --bg_black_50: #e8dfec;
-  --text_black_900: #302e4d;
-  --text_black_700: #504e70;
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
 }
-
+body.dark {
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text_black_700: #e9e9e9;
+}
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +38,7 @@ ul {
 }
 
 .section {
-  background-color: var(--bg_black_900);
+  background-color: var(--bg-black-900) ;
   min-height: 100vh;
   display: block;
   padding: 0 30px;
@@ -70,7 +76,7 @@ ul {
 
 .section_title h2 {
   font-size: 40px;
-  color: var(--text_black_900);
+  color: var(--text-black-900);
   font-weight: 700;
   position: relative;
 }
@@ -128,13 +134,13 @@ ul {
 /* aside */
 .aside {
   width: 270px;
-  background-color: var(--bg_black_100);
+  background-color: var(--bg-black-100);
   position: fixed;
   left: 0;
   top: 0;
   padding: 30px;
   height: 100%;
-  border-right: 1px solid var(--bg_black_50);
+  border-right: 1px solid var(--bg-black-50);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,7 +155,7 @@ ul {
 }
 
 .aside .logo a {
-  color: var(--text_black_900);
+  color: var(--text-black-900);
   font-weight: 700;
   padding: 15px 20px;
   font-size: 30px;
@@ -187,13 +193,13 @@ ul {
 .aside .nav-toggler {
   height: 40px;
   width: 45px;
-  border: 1px solid var(--bg_black_50);
+  border: 1px solid var(--bg-black-50);
   cursor: pointer;
   position: fixed;
   left: 300px;
   top: 20px;
   border-radius: 5px;
-  background: var(--bg_black_100);
+  background: var(--bg-black-100);
   display: none;
   align-items: center;
   justify-content: center;
@@ -239,8 +245,8 @@ ul {
   font-size: 16px;
   font-weight: 600;
   display: block;
-  color: var(--text_black_900);
-  border-bottom: 1px solid var(--bg_black_50);
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--bg-black-50);
   padding: 5px 15px;
 }
 
@@ -257,7 +263,7 @@ ul {
 .home {
   min-height: 100vh;
   display: flex;
-  color: var(--text_black_900);
+  color: var(--text-black-900);
   align-items: center;
 }
 
@@ -343,7 +349,7 @@ h3.my_profession {
   font-size: 24px;
   margin-bottom: 15px;
   font-weight: 700;
-  color: var(--text_black_900);
+  color: var(--text-black-900);
 }
 
 .about .about_content .about_text h3 span {
@@ -371,8 +377,8 @@ h3.my_profession {
   font-weight: 600;
   padding: 10px 0;
   font-size: 16px;
-  color: var(--text_black_900);
-  border-bottom: 1px solid var(--bg_black_50);
+  color: var(--text-black-900);
+  border-bottom: 1px solid var(--bg-black-50);
 }
 .about .about_content .personal_info .info_item p span {
   font-weight: 400;
@@ -410,7 +416,7 @@ h3.my_profession {
 }
 
 .about .about_content .skill_item .progress {
-  background-color: var(--bg_black_50);
+  background-color: var(--bg-black-50);
   height: 7px;
   border-radius: 4px;
   width: 100%;
@@ -433,7 +439,7 @@ h3.my_profession {
 .about .about_content .skills .skill_item .skill_percent {
   position: absolute;
   right: 0;
-  color: var(--text_black_900);
+  color: var(--text-black-900);
   top: -40px;
   font-weight: 400;
   line-height: 40px;
@@ -458,10 +464,10 @@ h3.my_profession {
   max-width: 100%;
 }
 .about .about_content .timeline {
-  background-color: var(--bg_black_100);
+  background-color: var(--bg-black-100);
   margin-top: 40px;
   padding: 30px 15px;
-  border: 1px solid var(--bg_black_50);
+  border: 1px solid var(--bg-black-50);
   border-radius: 10px;
   width: 100%;
   position: relative;
@@ -513,7 +519,7 @@ h3.my_profession {
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: capitalize;
-  color: var(--text_black_900);
+  color: var(--text-black-900);
 }
 
 .about .about_content .timeline .timeline_text {
@@ -536,8 +542,8 @@ h3.my_profession {
 }
 
 .service .service_item .service_item_inner {
-  background-color: var(--bg_black_100);
-  border: 1px solid var(--bg_black_50);
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
   border-radius: 10px;
   padding: 30px 15px;
   text-align: center;
@@ -576,7 +582,7 @@ h3.my_profession {
 .service .service_item .service_item_inner h4 {
   font-size: 18px;
   margin-bottom: 15px;
-  color: var(--text_black_900);
+  color: var(--text-black-900);
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -599,7 +605,7 @@ h3.my_profession {
 }
 
 .portfolio .portfolio_heading h2 {
-  color: var(--text_black_900);
+  color: var(--text-black-900);
   font-weight: 500;
 }
 
@@ -610,7 +616,7 @@ h3.my_profession {
 }
 
 .portfolio .portfolio_item_inner {
-  border: 6px solid var(--bg_black_100);
+  border: 6px solid var(--bg-black-100);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -629,7 +635,7 @@ h3.my_profession {
   margin-bottom: 20px;
 }
 .contact_sub_title {
-  color: var(--text_black_900);
+  color: var(--text-black-900);
   text-align: center;
   font-size: 15px;
   margin-bottom: 60px;
@@ -653,7 +659,7 @@ h3.my_profession {
 .contact .contact_info_item h4 {
   font-style: 18px;
   font-weight: 700;
-  color: var(--text_black_900);
+  color: var(--text-black-900);
   text-transform: capitalize;
   margin: 15px 0 5px;
 }
@@ -688,8 +694,8 @@ h3.my_profession {
   width: 100%;
   height: 50px;
   border-radius: 25px;
-  background-color: var(--bg_black_100);
-  border: 1px solid var(--bg_black_50);
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
   padding: 10px 25px;
   font-size: 16px;
   color: var(--text_black_700);
