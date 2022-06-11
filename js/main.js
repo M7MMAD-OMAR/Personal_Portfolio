@@ -13,8 +13,15 @@ window.addEventListener("load", () => {
     }
     else {
         dayNight.querySelector("i").classList.add("fa-moon");
-
+        
     }
 })
+// color: var(--bg-black-100);
+// script
 
-
+var typed = new Typed(".typing", {
+    strings:["", "Full Static Developer", "", "Web Designer", "", "Web Developer", "", "Graphic Designer", ""],
+    typeSpeed:110,
+    BackSpeed:50,
+    loop:true
+})

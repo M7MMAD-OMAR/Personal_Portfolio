@@ -1,7 +1,7 @@
 .style-switcher {
     position: fixed;
-     right: 0;
-    top: 60px;
+    right: 0;
+    /* top: 40px; */
     /* padding: 15px; */
     /* width: 200px;  */
     /* border: 1px solid var(--bg_black_50); */
@@ -29,13 +29,17 @@
 
 .style-switcher .s-icon i {
     line-height: 40px;
+    color: var(--text-black-btn);
 }
 
 .style-switcher {
     top: 0;
 }
 .style-switcher .day-night {
-    top: 55px;
+    top: 30px;
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+    border-radius: 50%;
 }
 /* .style-switcher h4 {
     margin: 0 0 10px;
