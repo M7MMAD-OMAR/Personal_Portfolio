@@ -25,3 +25,14 @@ var typed = new Typed(".typing", {
     BackSpeed:50,
     loop:true
 })
+
+const actives = document.querySelectorAll(".nav li a");
+
+actives.forEach((ele) => {
+    ele.onclick = function() {
+        actives.forEach((ele) => {
+            ele.classList.remove("active");
+        })
+        this.classList.add("active");
+    };
+});
