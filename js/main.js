@@ -36,3 +36,40 @@ actives.forEach((ele) => {
         this.classList.add("active");
     };
 });
+
+
+window.onscroll = function() {
+    let sY = window.scrollY;
+    if (sY <= 715) {
+        actives.forEach((ele) => {
+            ele.classList.remove("active");
+        })
+        actives[0].classList.add("active");
+    }
+    if (sY >= 700) {
+        actives.forEach((ele) => {
+            ele.classList.remove("active");
+        })
+        actives[1].classList.add("active");
+    }
+    if (sY >= 2260) {
+        actives.forEach((ele) => {
+            ele.classList.remove("active");
+        })
+        actives[2].classList.add("active");
+    }
+    if (sY >= 3300) {
+        actives.forEach((ele) => {
+            ele.classList.remove("active");
+        })
+        actives[3].classList.add("active");
+    }
+    if (sY >= 4200) {
+        actives.forEach((ele) => {
+            ele.classList.remove("active");
+        })
+        actives[4].classList.add("active");
+    }
+}
+
+

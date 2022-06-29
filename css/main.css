@@ -10,6 +10,14 @@
   --bg-black-btn: #fdf9ff;
   --text-black-btn: black;
 }
+
+/* Scroll Start */
+
+html {scroll-behavior: smooth;}
+/* Scroll End  */
+
+
+
 body.dark {
   --bg-black-900: #151515;
   --bg-black-100: #222222;
@@ -26,11 +34,15 @@ body.dark {
   text-decoration: none;
   box-sizing: border-box;
 }
+html{
+  overflow-x: hidden;
+}
 
 body {
   line-height: 1.5;
   font-size: 16px;
   font-family: "Poppins" sans-serif;
+  overflow-x: hidden;
 }
 
 ::before,
@@ -155,19 +167,20 @@ ul {
 .aside .logo {
   position: absolute;
   top: 50px;
-  font-size: 30px;
-  text-transform: capitalize;
+  /* font-size: 30px;
+  text-transform: capitalize; */
 }
 
-.aside .logo a {
-  color: var(--text-black-900);
-  font-weight: 700;
+.aside .logo a img {
+  width: 200px;
+  /* color: var(--text-black-900); */
+  /* font-weight: 700; */
   padding: 15px 20px;
-  font-size: 30px;
-  letter-spacing: 5px;
+  /* font-size: 30px;
+  letter-spacing: 5px; */
   position: relative;
 }
-
+/* 
 .aside .logo a span {
   font-family: "Clicker Script", cursive;
   font-size: 40px;
@@ -193,7 +206,7 @@ ul {
   border-right: 5px solid var(--skin_color);
   top: 0;
   right: 0;
-}
+} */
 
 .aside .nav-toggler {
   height: 40px;
@@ -253,8 +266,15 @@ ul {
   color: var(--text-black-900);
   border-bottom: 1px solid var(--bg-black-50);
   padding: 5px 15px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
-
+.aside .nav li a:hover {
+  color: var(--skin_color);
+}
 .aside .nav li a.active {
   color: var(--skin_color);
 }
