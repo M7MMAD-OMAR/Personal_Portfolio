@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;400;500;600;700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap");
 
 :root {
   --bg-black-900: #f2f2fc;
@@ -11,8 +11,8 @@
   --bg-black-btn: #fdf9ff;
   --text-black-btn: black;
   --scroll: #ffffff;
+  --text-white-black: #000;
 }
-
 
 /* Scroll Start */
 ::-webkit-scrollbar-thumb {
@@ -23,21 +23,21 @@
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
 }
- 
+
 ::-webkit-scrollbar-track {
   border: 9px solid var(--scroll);
-  }
+}
 
 ::-webkit-scrollbar {
   width: 0.9rem;
- }
+}
+
 /* Scroll End  */
 
- html {
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
 
 body.dark {
   --bg-black-900: #151515;
@@ -48,6 +48,7 @@ body.dark {
   --bg-black-btn: black;
   --text-black-btn: #fdf9ff;
   --scroll: #393939;
+  --text-white-black: #fff;
 }
 
 * {
@@ -64,7 +65,7 @@ body {
   font-size: 16px;
   /* font-family: "Poppins" sans-serif; */
   overflow-x: hidden;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   /* font-weight: bold; */
 }
 
@@ -78,16 +79,17 @@ ul {
 }
 
 .section {
-  background-color: var(--bg-black-900) ;
+  background-color: var(--bg-black-900);
   min-height: 100vh;
   display: block;
   padding: 0 30px;
   opacity: 1;
-
 }
+
 .visi {
   visibility: hidden;
 }
+
 .hidden {
   display: none !important;
 }
@@ -95,6 +97,7 @@ ul {
 .main-content {
   padding-left: 270px;
 }
+
 .padd-15 {
   padding-left: 15px;
   padding-right: 15px;
@@ -117,7 +120,7 @@ ul {
 }
 
 .section-title h2 {
-  position: relative; 
+  position: relative;
 }
 
 .section-title h2::before {
@@ -202,6 +205,7 @@ ul {
   letter-spacing: 5px; */
   position: relative;
 }
+
 /* 
 .aside .logo a span {
   font-family: "Clicker Script", cursive;
@@ -244,6 +248,7 @@ ul {
   align-items: center;
   justify-content: center;
 }
+
 .aside .nav-toggler span {
   height: 2px;
   width: 18px;
@@ -294,9 +299,11 @@ ul {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
 }
+
 .aside .nav li a:hover {
   color: var(--skin-color);
 }
+
 .aside .nav li a.active {
   color: var(--skin-color);
 }
@@ -427,6 +434,7 @@ h3.my-profession {
   color: var(--text-black-900);
   border-bottom: 1px solid var(--bg-black-50);
 }
+
 .about .about-content .personal-info .info-item p span {
   font-weight: 400;
   color: var(--text-black-700);
@@ -510,6 +518,7 @@ h3.my-profession {
   flex: 0 0 100%;
   max-width: 100%;
 }
+
 .about .about-content .timeline {
   background-color: var(--bg-black-100);
   margin-top: 40px;
@@ -539,7 +548,8 @@ h3.my-profession {
   top: 0;
   background-color: var(--skin-color);
 }
-.about .about-content .timeline .timeline-item p{
+
+.about .about-content .timeline .timeline-item p {
   color: var(--text-black-900);
   /* font-weight: 100; */
 }
@@ -586,62 +596,159 @@ h3.my-profession {
   padding-bottom: 40px;
 }
 
-.service .service-item {
-  margin-bottom: 30px;
+
+/* Card Start */
+.service-item {
   flex: 0 0 33.33%;
   max-width: 33.33%;
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem; 
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
-.service .service-item .service-item-inner {
+.card-continer {
   background-color: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
-  border-radius: 10px;
-  padding: 30px 15px;
   text-align: center;
-  transition: all 0.3s ease;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  overflow-y: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 
-.service .service-item .service-item-inner:hover {
+.card-back {
+  padding: 120px 10px 5px 10px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.card-back p {
+  opacity: 0;
+  color: var(--text-black-900);
+  font-weight: 200;
+  line-height: 150%;
+  font-size: 1rem;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.card-front {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  gap: 1em;
+  flex-direction: column;
+  background-color: #45ef2baa;
+  /* background-color: #37bf2250; */
+  height: 78%;
+  color: var(--text-white-black);
+  bottom: 0;
+  padding: 1rem;
+  border-radius: 1em 1em 0 0;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.text-body {
+  color: var(--text-black-700);
+  font-size: 1em;
+  line-height: 200%;
+  color: var(--text-white-black);
+
+}
+.card-front h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: var(--bg-black-900);
+  border-radius: 50%;
+  z-index: 1;
+  border: 5px solid var(--bg-black-900);
+  transform: translateY(-60%);
+  transition:all 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+  -webkit-transition:all 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+  -moz-transition:all 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+  -ms-transition:all 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+  -o-transition:all 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.icon i {
+  font-size: 2.5rem;
+  color: var(--skin-color);
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -ms-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  -o-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* Hover */
+.card-continer:hover {
   box-shadow: 0 0 35px rgba(48, 46, 77, 0.15);
 }
 
-.service .service-item .service-item-inner .icon {
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 30px;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-.service .service-item .service-item-inner .icon .fa {
-  font-size: 40px;
-  line-height: 60px;
-  color: var(--skin-color);
-  transition: all 0.3s ease;
+.service-item:hover .card-front {
+  transform: translateY(100%);
 }
 
-.service .service-item .service-item-inner:hover .icon {
+.service-item:hover p {
+  opacity: 1;
+}
+
+.service-item:hover .circle {
   background-color: var(--skin-color);
 }
 
-.service .service-item .service-item-inner:hover .icon .fa {
-  font-size: 25px;
-  color: #ffffff;
+.service-item:hover i {
+  font-size: 1.5rem;
+  color: white;
 }
 
-.service .service-item .service-item-inner h4 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: var(--text-black-900);
-  font-weight: 700;
-  text-transform: capitalize;
-}
-.service .service-item .service-item-inner p {
-  font-style: 16px;
-  color: var(--text-black-700);
-  line-height: 25px;
-}
+/* Card End */
+
+
+
+
+
+
+
+
+
+
 
 /* portfolio */
 
@@ -672,6 +779,7 @@ h3.my-profession {
   overflow: hidden;
   cursor: pointer;
 }
+
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
   display: block;
@@ -685,6 +793,7 @@ h3.my-profession {
   font-size: 25px;
   margin-bottom: 20px;
 }
+
 .contact-sub-title {
   color: var(--text-black-900);
   text-align: center;
@@ -707,6 +816,7 @@ h3.my-profession {
   font-style: 25px;
   color: var(--skin-color);
 }
+
 .contact .contact-info-item h4 {
   font-style: 18px;
   font-weight: 700;
@@ -714,6 +824,7 @@ h3.my-profession {
   text-transform: capitalize;
   margin: 15px 0 5px;
 }
+
 .contact .contact-info-item p {
   font-size: 16px;
   lighting-color: 25px;
@@ -734,9 +845,8 @@ h3.my-profession {
 .contact .contact-form .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
-
-
 }
+
 .contact .contact-form .form-item {
   margin-bottom: 30px;
 }
@@ -752,9 +862,9 @@ h3.my-profession {
   color: var(--text-black-700);
   transition: all 0.3 ease;
 }
+
 .contact .contact-form .form-item .form-control:focus {
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-
 }
 
 .contact .contact-form .form-item textarea.form-control {
@@ -768,11 +878,6 @@ h3.my-profession {
   height: 50px;
   padding: 0 50px;
 }
-
-
-
-
-
 
 /* button, title section styling */
 .button {
@@ -809,17 +914,9 @@ h3.my-profession {
 .button:hover .hover-text,
 .button.active .hover-text.active {
   width: 100%;
-  filter: drop-shadow(0 0 25px var(--skin-color) );
-  -webkit-filter: drop-shadow(0 0 25px var(--skin-color) );
+  filter: drop-shadow(0 0 25px var(--skin-color));
+  -webkit-filter: drop-shadow(0 0 25px var(--skin-color));
 }
-
-
-
-
-
-
-
-
 
 /* From uiverse.io by @alexmaracinaru */
 .cta {
@@ -831,8 +928,8 @@ h3.my-profession {
   -ms-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
 }
- 
- .cta:before {
+
+.cta:before {
   content: "";
   position: absolute;
   top: 0;
@@ -853,15 +950,15 @@ h3.my-profession {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
- 
- .cta span {
+
+.cta span {
   position: relative;
   font-size: 1.2rem;
   font-weight: bolder;
   color: var(--text-black-900);
- }
- 
- .cta i {
+}
+
+.cta i {
   position: relative;
   top: 0;
   margin-left: 13px;
@@ -877,21 +974,21 @@ h3.my-profession {
   -ms-transform: translateX(-5px);
   -o-transform: translateX(-5px);
 }
- 
- .cta:hover:before {
+
+.cta:hover:before {
   width: 100%;
   background: #3fd927dc;
- }
- 
- .cta:hover i {
+}
+
+.cta:hover i {
   transform: translateX(0);
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
 }
- 
- .cta:active {
+
+.cta:active {
   transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -moz-transform: scale(0.95);
@@ -899,32 +996,22 @@ h3.my-profession {
   -o-transform: scale(0.95);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* From uiverse.io by @alexruix */
 .input-group {
   position: relative;
- }
- .input-group textarea {
+}
+
+.input-group textarea {
   max-width: 100% !important;
   min-width: 100px;
   min-height: 60px;
- }
- button {
+}
+
+button {
   cursor: pointer;
- }
- .input {
+}
+
+.input {
   width: 100%;
   height: 50px;
   background-color: var(--bg-black-100);
@@ -932,38 +1019,41 @@ h3.my-profession {
   padding: 1rem;
   font-size: 1rem;
   color: var(--text-black-900);
-  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
   -moz-border-radius: 1.5rem;
   -ms-border-radius: 1.5rem;
   -o-border-radius: 1.5rem;
 }
- 
- .user-label {
+
+.user-label {
   opacity: 0.5;
   font-weight: bold;
   position: absolute;
   left: 20px;
   color: var(--text-black-900);
-  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0.8rem);
   -webkit-transform: translateY(0.8rem);
   -moz-transform: translateY(0.8rem);
   -ms-transform: translateY(0.8rem);
   -o-transform: translateY(0.8rem);
 }
- 
- .input:focus, .input:valid {
+
+.input:focus,
+.input:valid {
   /* opacity: 1; */
   outline: none;
   border: 1.5px solid var();
-  
 }
-.input:focus{
-   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
- }
- .input:focus ~ label, input:valid ~ label {
+
+.input:focus {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.input:focus~label,
+input:valid~label {
   transform: translateY(-50%) scale(0.8);
   background-color: var(--bg-black-100);
   padding: 0 0.5em;
@@ -978,13 +1068,4 @@ h3.my-profession {
   -ms-border-radius: 10px 10px 0 0;
   -o-border-radius: 10px 10px 0 0;
 }
-
-
-
-
-/* card */
-
-
-
-
 

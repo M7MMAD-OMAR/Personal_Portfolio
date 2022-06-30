@@ -36,13 +36,16 @@
     .contact .contact-info-item,
     .contact .contact-form .col-6,
     .portfolio .portfolio-item,
-    .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .skills,
     .about .about-content .personal-info {
       flex: 0 0 100%;
       max-width: 100%;
+    }
+    .service .service-item {
+      min-width: 101%;
+      max-height:  500px;
     }
     
   }
