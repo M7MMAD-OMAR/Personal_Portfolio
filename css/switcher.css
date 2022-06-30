@@ -1,18 +1,12 @@
-.style-switcher {
+.style-mode {
+    cursor: pointer;
     position: fixed;
     right: 0;
-    /* top: 40px; */
-    /* padding: 15px; */
-    /* width: 200px;  */
-    /* border: 1px solid var(--bg-black-50); */
-    /* background: var(--bg-black-100); */
-    /* z-index: 101; */
-    /* border-radius: 5px; */
-    /* transition: all 0.3s ease; */
+    top: 0;
 }
 
 
-.style-switcher .s-icon {
+.style-mode .s-icon {
     position: absolute;
     height: 40px;
     width: 40px;
@@ -27,38 +21,14 @@
     border-radius: 50%;
 }
 
-.style-switcher .s-icon i {
+.style-mode .s-icon i {
     line-height: 40px;
     color: var(--text-black-btn);
 }
 
-.style-switcher {
-    top: 0;
-}
-.style-switcher .day-night {
+.style-mode .day-night {
     top: 30px;
     border: 1px solid var(--bg-black-50);
     background: var(--scroll);
     border-radius: 50%;
 }
-/* .style-switcher h4 {
-    margin: 0 0 10px;
-    color: var(--text-black-700);
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: capitalize; 
-} */
-/* 
-.style-switcher .colors {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.style-switcher .colors span {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: 1px solid red;
-} */

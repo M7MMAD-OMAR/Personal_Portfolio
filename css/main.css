@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300;400;500;600;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
 
 :root {
   --bg-black-900: #f2f2fc;
@@ -55,13 +56,16 @@ body.dark {
   outline: none;
   text-decoration: none;
   box-sizing: border-box;
+  letter-spacing: 0.02em;
 }
 
 body {
   line-height: 1.5;
   font-size: 16px;
-  font-family: "Poppins" sans-serif;
+  /* font-family: "Poppins" sans-serif; */
   overflow-x: hidden;
+  font-family: 'Barlow', sans-serif;
+  /* font-weight: bold; */
 }
 
 ::before,
@@ -113,10 +117,7 @@ ul {
 }
 
 .section-title h2 {
-  font-size: 40px;
-  color: var(--text-black-900);
-  font-weight: 700;
-  position: relative;
+  position: relative; 
 }
 
 .section-title h2::before {
@@ -324,7 +325,7 @@ h3.hello {
 }
 
 h3.hello span {
-  font-family: "Clicker Script", cursive;
+  /* font-family: "Clicker Script", cursive; */
   font-size: 30px;
   font-weight: 700;
   color: var(--skin-color);
@@ -747,7 +748,7 @@ h3.my-profession {
   background-color: var(--bg-black-100);
   border: 1px solid var(--bg-black-50);
   padding: 10px 25px;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--text-black-700);
   transition: all 0.3 ease;
 }
@@ -771,45 +772,219 @@ h3.my-profession {
 
 
 
-/* From uiverse.io by @satyamchaudharydev */
-/* === removing default button style ===*/
-.button {
-  margin: 0;
-  background: transparent;
-  padding: 0;
-  border: none;
-}
 
-/* button styling */
+
+/* button, title section styling */
 .button {
-  --border-right: 6px;
-  --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #37FF8B;
-  --fs-size: 2em;
+  cursor: default;
+  background: transparent;
+  border: none;
+  margin-bottom: 8px;
   letter-spacing: 3px;
   text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
+  font-size: 1.3em;
+  /* font-family: "Arial"; */
   position: relative;
   text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
+  color: var(--text-black-700);
+  -webkit-text-stroke: 1px var(--text-black-700);
 }
-/* this is the text, when you hover on button */
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
+  color: var(--skin-color);
   width: 0%;
   inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
+  border-right: 6px solid var(--skin-color);
   overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
+  transition: 0.7s;
+  -webkit-text-stroke: 1px var(--skin-color);
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
 }
-/* hover */
-.button:hover .hover-text {
+
+.button:hover .hover-text,
+.button.active .hover-text.active {
   width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color))
+  filter: drop-shadow(0 0 25px var(--skin-color) );
+  -webkit-filter: drop-shadow(0 0 25px var(--skin-color) );
 }
+
+
+
+
+
+
+
+
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+  position: relative;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*display: block;  */
+
+  background: #52e43baa;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+ 
+ .cta span {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: var(--text-black-900);
+ }
+ 
+ .cta i {
+  position: relative;
+  top: 0;
+  margin-left: 13px;
+  color: var(--text-black-900);
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  -o-transform: translateX(-5px);
+}
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #3fd927dc;
+ }
+ 
+ .cta:hover i {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+ 
+ .cta:active {
+  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* From uiverse.io by @alexruix */
+.input-group {
+  position: relative;
+ }
+ .input-group textarea {
+  max-width: 100% !important;
+  min-width: 100px;
+  min-height: 60px;
+ }
+ button {
+  cursor: pointer;
+ }
+ .input {
+  width: 100%;
+  height: 50px;
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--text-black-900);
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+ 
+ .user-label {
+  opacity: 0.5;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+  color: var(--text-black-900);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+  transform: translateY(0.8rem);
+  -webkit-transform: translateY(0.8rem);
+  -moz-transform: translateY(0.8rem);
+  -ms-transform: translateY(0.8rem);
+  -o-transform: translateY(0.8rem);
+}
+ 
+ .input:focus, .input:valid {
+  /* opacity: 1; */
+  outline: none;
+  border: 1.5px solid var();
+  
+}
+.input:focus{
+   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+ }
+ .input:focus ~ label, input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: var(--bg-black-100);
+  padding: 0 0.5em;
+  box-shadow: 0 -10px 20px -3px rgba(48, 46, 77, 0.15);
+  opacity: 1;
+  border-top: 1px solid var(--bg-black-50);
+
+  color: var(--skin-color);
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -ms-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+}
+
+
+
+
+/* card */
+
+
+
+
+

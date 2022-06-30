@@ -23,13 +23,9 @@ dayNight.addEventListener("click", () => {
 window.addEventListener("load", () => {
     if (document.body.classList.contains("dark")) {
         dayNight.querySelector("i").classList.add("fa-sun");
-
     }
     else {
         dayNight.querySelector("i").classList.add("fa-moon");
-        // logo_dark.classList.remove("hidden");
-        // logo_white.classList.add("hidden");
-
     }
 
 })
@@ -45,50 +41,89 @@ var typed = new Typed(".typing", {
 
 
 // Navbar change color by scroll and click
-const actives = document.querySelectorAll(".nav li a");
+const nav_active = document.querySelectorAll(".nav li a");
+const buttons_active = document.querySelectorAll(".button");
+const text_hover_active = document.querySelectorAll(".hover-text");
 
-actives.forEach((ele) => {
+nav_active.forEach((ele) => {
     ele.onclick = function () {
-        actives.forEach((ele) => {
+        nav_active.forEach((ele) => {
             ele.classList.remove("active");
         })
         this.classList.add("active");
     };
 });
 
-
-
 window.onscroll = function () {
     let sY = window.scrollY;
     if (sY <= 715) {
-        actives.forEach((ele) => {
+        nav_active.forEach((ele) => {
             ele.classList.remove("active");
-        })
-        actives[0].classList.add("active");
+        });
+        buttons_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        text_hover_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        nav_active[0].classList.add("active");
     }
+
     if (sY >= 700) {
-        actives.forEach((ele) => {
+        nav_active.forEach((ele) => {
             ele.classList.remove("active");
-        })
-        actives[1].classList.add("active");
+        });
+        buttons_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        text_hover_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        nav_active[1].classList.add("active");
+        buttons_active[0].classList.add("active");
+        text_hover_active[0].classList.add("active");
     }
-    if (sY >= 2260) {
-        actives.forEach((ele) => {
+    if (sY >= 2240) {
+        nav_active.forEach((ele) => {
             ele.classList.remove("active");
-        })
-        actives[2].classList.add("active");
+        });
+        buttons_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        text_hover_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        nav_active[2].classList.add("active");
+        buttons_active[1].classList.add("active");
+        text_hover_active[1].classList.add("active");
     }
-    if (sY >= 3250) {
-        actives.forEach((ele) => {
+    if (sY >= 3200) {
+        nav_active.forEach((ele) => {
             ele.classList.remove("active");
-        })
-        actives[3].classList.add("active");
+        });
+        buttons_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        text_hover_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        nav_active[3].classList.add("active");
+        buttons_active[2].classList.add("active");
+        text_hover_active[2].classList.add("active");
     }
     if (sY >= 4200) {
-        actives.forEach((ele) => {
+        nav_active.forEach((ele) => {
             ele.classList.remove("active");
-        })
-        actives[4].classList.add("active");
+        });
+        buttons_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        text_hover_active.forEach((ele) => {
+            ele.classList.remove("active");
+        });
+        nav_active[4].classList.add("active");
+        buttons_active[3].classList.add("active");
+        text_hover_active[3].classList.add("active");
     }
 }
 
