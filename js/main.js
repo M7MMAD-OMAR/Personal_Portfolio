@@ -32,12 +32,12 @@ window.addEventListener("load", () => {
 
 
 // JS typing
-var typed = new Typed(".typing", {
-    strings: ["", "Full Static Developer", "", "Web Designer", "", "Web Developer", "", "Graphic Designer", ""],
-    typeSpeed: 110,
-    BackSpeed: 50,
-    loop: true
-})
+// var typed = new Typed(".typing", {
+//     strings: ["", "Full Static Developer", "", "Web Designer", "", "Web Developer", "", "Graphic Designer", ""],
+//     typeSpeed: 110,
+//     BackSpeed: 50,
+//     loop: true
+// })
 
 
 // Navbar change color by scroll and click
@@ -128,3 +128,21 @@ window.onscroll = function () {
 }
 
 
+
+
+// Activate cards
+const cards_activate = document.querySelectorAll(".service-item");
+
+
+cards_activate.forEach((ele) => {
+    ele.onclick = function () {
+        if(this.classList.contains("active")) {
+            this.classList.remove("active");
+        } else {
+            cards_activate.forEach((ele) => {
+                ele.classList.remove("active");
+            })
+            this.classList.add("active");
+        }
+    };
+});
