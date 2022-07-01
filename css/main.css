@@ -320,6 +320,7 @@ ul {
   min-height: 100vh;
   display: flex;
   color: var(--text-black-900);
+  /* background-color: #ccccccdd; */
   /* align-items: center; */
 }
 
@@ -333,7 +334,6 @@ ul {
   width: 100%;
   position: relative;
   min-height: 720px;
-  
 }
 
 .home-info h1.top {
@@ -460,17 +460,22 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info {
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-top: 40px;
 }
 
 .about .about-content .personal-info .info-item {
-  flex: 0 0 50%;
+  width: 40%;
+  /* flex: 0 0 50%;
   max-width: 50%;
+  display: flex;
+  align-items: center;
+    justify-content: space-around; */
 }
 
 .about .about-content .personal-info .info-item p {
+  display: inline-block;
   font-weight: 600;
   padding: 10px 0;
   font-size: 16px;
@@ -478,11 +483,17 @@ h3.my-profession {
   border-bottom: 1px solid var(--bg-black-50);
 }
 
+.about .about-content .personal-info .personal-info-about {
+  justify-content: space-evenly;
+}
 .about .about-content .personal-info .info-item p span {
   font-weight: 400;
   color: var(--text-black-700);
-  margin-left: 4px;
-  display: inline-block;
+  margin-left: 8px;
+  /* display: inline-block; */
+  /* float: right;
+  width: 80%;
+  margin-top: 0.6rem; */
 }
 
 .about .about-content .personal-info .buttons {
@@ -958,7 +969,8 @@ h3.my-profession {
 }
 
 /* From uiverse.io by @alexmaracinaru */
-.cta {
+.btn_contact {
+  margin-top: 100px;
   position: relative;
   padding: 12px 18px;
   transition: all 0.2s ease;
@@ -968,7 +980,7 @@ h3.my-profession {
   -o-transition: all 0.2s ease;
 }
 
-.cta:before {
+.btn_contact:before {
   content: "";
   position: absolute;
   top: 0;
@@ -990,14 +1002,14 @@ h3.my-profession {
   -o-border-radius: 50px;
 }
 
-.cta span {
+.btn_contact span {
   position: relative;
   font-size: 1.2rem;
   font-weight: bolder;
   color: var(--text-black-900);
 }
 
-.cta i {
+.btn_contact i {
   position: relative;
   top: 0;
   margin-left: 13px;
@@ -1014,12 +1026,12 @@ h3.my-profession {
   -o-transform: translateX(-5px);
 }
 
-.cta:hover:before {
+.btn_contact:hover:before {
   width: 100%;
   background: #3fd927dc;
 }
 
-.cta:hover i {
+.btn_contact:hover i {
   transform: translateX(0);
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -1027,7 +1039,7 @@ h3.my-profession {
   -o-transform: translateX(0);
 }
 
-.cta:active {
+.btn_contact:active {
   transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -moz-transform: scale(0.95);
@@ -1107,3 +1119,87 @@ input:valid ~ label {
   -ms-border-radius: 10px 10px 0 0;
   -o-border-radius: 10px 10px 0 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button Download CV Start */
+.download-button {
+  position: relative;
+  border-width: 0;
+  color: var(--bg-black-100);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 1;
+  margin: 50px 0 30px 20px;
+
+}
+
+.download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: var(--text-black-700);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 4px;
+  transform: translateY(0%);
+  background-color: var(--skin-color);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+  max-width: 60%;
+  transform: translateY(90%);
+  -webkit-transform: translateY(90%);
+  -moz-transform: translateY(90%);
+  -ms-transform: translateY(90%);
+  -o-transform: translateY(90%);
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+/* Button Download CV End */
