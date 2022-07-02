@@ -31,19 +31,17 @@ window.addEventListener("load", () => {
 })
 
 
-// JS typing
-// var typed = new Typed(".typing", {
-//     strings: ["", "Full Static Developer", "", "Web Designer", "", "Web Developer", "", "Graphic Designer", ""],
-//     typeSpeed: 110,
-//     BackSpeed: 50,
-//     loop: true
-// })
-
 
 // Navbar change color by scroll and click
 const nav_active = document.querySelectorAll(".nav li a");
 const buttons_active = document.querySelectorAll(".button");
 const text_hover_active = document.querySelectorAll(".hover-text");
+
+
+const active_skill = document.querySelectorAll(".skill svg circle");
+
+
+
 
 nav_active.forEach((ele) => {
     ele.onclick = function () {
@@ -93,10 +91,24 @@ window.onscroll = function () {
         text_hover_active.forEach((ele) => {
             ele.classList.remove("active");
         });
+
         nav_active[2].classList.add("active");
         buttons_active[1].classList.add("active");
         text_hover_active[1].classList.add("active");
     }
+
+    if (sY >= 1100) {
+    
+        if(active_skill[0].classList.contains("active")) {
+
+        }else {
+            active_skill.forEach((ele) => {
+                ele.classList.add("active");
+            })
+
+        }
+    }
+
     if (sY >= 2400) {
         nav_active.forEach((ele) => {
             ele.classList.remove("active");
@@ -131,8 +143,7 @@ window.onscroll = function () {
 
 
 // Activate cards
-const cards_activate = document.querySelectorAll(".service-item");
-
+const cards_activate = document.querySelectorAll(".experience-item");
 
 cards_activate.forEach((ele) => {
     ele.onclick = function () {
@@ -150,6 +161,14 @@ cards_activate.forEach((ele) => {
 
 
 // Skills 
+
+
+
+
+
+
+
+
 
 
 let php = document.getElementById("php");
@@ -236,3 +255,29 @@ setInterval(() => {
         mysql.innerHTML = mysql_count + "%";
     }
 }, 24);
+
+
+
+// concate
+
+
+
+const active_concate = document.querySelectorAll(".card-us");
+
+
+
+
+active_concate.forEach((ele) => {
+    ele.onclick = function () {
+        if (this.classList.contains("active")) {
+            this.classList.remove("active");
+        } else {
+            active_concate.forEach((ele) => {
+                ele.classList.remove("active");
+            })
+            this.classList.add("active");
+        }
+    };
+});
+
+
