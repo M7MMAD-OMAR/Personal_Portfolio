@@ -146,7 +146,6 @@ ul {
   margin-top: 8px;
 }
 
-
 .btn-about {
   margin-top: 40px;
 }
@@ -325,7 +324,7 @@ ul {
   min-height: 100vh;
   display: flex;
   color: var(--text-black-900);
-  background: linear-gradient(30deg, var(--bg-black-900) 40%,  #37bf22 );
+  background: linear-gradient(30deg, var(--bg-black-900) 40%, #37bf22);
   /* background-color: #ccccccdd; */
   /* align-items: center; */
 }
@@ -363,11 +362,12 @@ ul {
 }
 
 .home-img img {
-  width: 300px;
+  border: 1px solid var(--skin-color);
+  width: 350px;
   margin: 5px 0;
   position: absolute;
-  top: -130px;
-  right: 100px;
+  bottom: -100px;
+  right: 90px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -974,7 +974,7 @@ h3.my-profession {
   -webkit-filter: drop-shadow(0 0 25px var(--skin-color));
 }
 
-/* From uiverse.io by @alexmaracinaru */
+
 .btn_contact {
   cursor: pointer;
   margin-top: 100px;
@@ -1056,12 +1056,9 @@ h3.my-profession {
   -o-transform: scale(0.95);
 }
 
-
 .btn_send {
   bottom: -70px;
 }
-
-
 
 .input-group {
   position: relative;
@@ -1139,98 +1136,7 @@ input:valid ~ label {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* Button Download CV Start */
-.download-button {
-  position: relative;
-  border-width: 0;
-  color: var(--bg-black-100);
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 4px;
-  z-index: 1;
-  margin: 50px 0 30px 20px;
-
-}
-
-.download-button .docs {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  min-height: 40px;
-  padding: 0 10px;
-  border-radius: 4px;
-  z-index: 1;
-  background-color: var(--text-black-700);
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.download {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 90%;
-  margin: 0 auto;
-  z-index: -1;
-  border-radius: 4px;
-  transform: translateY(0%);
-  background-color: var(--skin-color);
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.download-button:hover .download {
-  max-width: 60%;
-  transform: translateY(90%);
-  -webkit-transform: translateY(90%);
-  -moz-transform: translateY(90%);
-  -ms-transform: translateY(90%);
-  -o-transform: translateY(90%);
-}
-
-.download svg polyline,
-.download svg line {
-  animation: docs 1s infinite;
-}
-
-@keyframes docs {
-  0% {
-    transform: translateY(0%);
-  }
-
-  50% {
-    transform: translateY(-15%);
-  }
-
-  100% {
-    transform: translateY(0%);
-  }
-}
-/* Button Download CV End */
-
-
-
-
-
-
-
-
-
-
-/* From uiverse.io by @satyamchaudharydev */
-.card {
+.card-us {
   margin-left: 20px;
   margin-right: 20px;
   height: 90px;
@@ -1240,8 +1146,6 @@ input:valid ~ label {
   height: 50px;
   text-align: center;
   background: var(--bg-black-100);
-  /* padding: .5em; */
-  /* padding-block: 1.8em; */
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -1250,36 +1154,30 @@ input:valid ~ label {
   justify-content: center;
   align-items: center;
   border: 1px solid var(--skin-color);
-  /*gap: 1em;
-  */transition: .8s cubic-bezier(.6,.4,0,1),transform .15s ease;
-  -webkit-transition: .8s cubic-bezier(.6,.4,0,1),transform .15s ease;
-  -moz-transition: .8s cubic-bezier(.6,.4,0,1),transform .15s ease;
-  -ms-transition: .8s cubic-bezier(.6,.4,0,1),transform .15s ease;
-  -o-transition: .8s cubic-bezier(.6,.4,0,1),transform .15s ease;
+  transition: 0.8s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  -webkit-transition: 0.8s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  -moz-transition: 0.8s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  -ms-transition: 0.8s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
+  -o-transition: 0.8s cubic-bezier(0.6, 0.4, 0, 1), transform 0.15s ease;
 }
 
-/* .card__body {
-  color: #464853;
-  line-height: 1.5em;
-  font-size: 1em;
-} */
 
-.card > :not(span) {
-  transition: .5s cubic-bezier(.6,.4,0,1);
-  -webkit-transition: .5s cubic-bezier(.6,.4,0,1);
-  -moz-transition: .5s cubic-bezier(.6,.4,0,1);
-  -ms-transition: .5s cubic-bezier(.6,.4,0,1);
-  -o-transition: .5s cubic-bezier(.6,.4,0,1);
+.card-us > :not(span) {
+  transition: 0.5s cubic-bezier(0.6, 0.4, 0, 1);
+  -webkit-transition: 0.5s cubic-bezier(0.6, 0.4, 0, 1);
+  -moz-transition: 0.5s cubic-bezier(0.6, 0.4, 0, 1);
+  -ms-transition: 0.5s cubic-bezier(0.6, 0.4, 0, 1);
+  -o-transition: 0.5s cubic-bezier(0.6, 0.4, 0, 1);
 }
 
-.card > strong {
+.card-us > strong {
   color: var(--text-white-black);
   display: block;
   font-size: 1.4rem;
-  letter-spacing: -.035em;
+  letter-spacing: -0.035em;
 }
 
-.card span {
+.card-us span {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1287,55 +1185,289 @@ input:valid ~ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--text-white-black);
-  background-color: #F30058;
+  color: white;
   border-radius: 5px;
   font-weight: bold;
   top: 100%;
-  transition: all .3s cubic-bezier(.6,.4,0,1);
+  transition: all 0.3s cubic-bezier(0.6, 0.4, 0, 1);
 }
 
-.card span.twitter {
-  background-color: #29A8DF;
+.card-us span.instagram {
+  background-color: #f30058;
+
+}
+.card-us span.twitter {
+  background-color: #29a8df;
 }
 
-.card span.whatsApp {
-  background-color: #4CC858;
+.card-us span.whatsApp {
+  background-color: #4cc858;
 }
 
-.card span.linkedin {
-  background-color: #0964C1;
+.card-us span.linkedin {
+  background-color: #0964c1;
 }
 
-.card span.gmail {
-  background-color: #F9BC02;
+.card-us span.gmail {
+  background-color: #f9bc02;
 }
 
-.card span.facebook {
-  background-color: #118FF2;
+.card-us span.facebook {
+  background-color: #118ff2;
 }
 
-.card span.github {
-  background-color: #0D1117;
+.card-us span.github {
+  background-color: #0d1117;
   color: white;
 }
 
-.card i {
+.card-us i {
   color: var(--text-white-black);
   font-size: xx-large;
 }
 
-
-.card:hover span {
+.card-us:hover span {
   top: 0;
   font-size: 1.2em;
 }
 
-.card:hover {
+.card-us:hover {
   border: 1px solid var(--bg-black-100);
   background: var(--hover-bg);
 }
 
-.card:hover>div,.card:hover>strong {
+.card-us:hover > div,
+.card-us:hover > strong {
   opacity: 0;
 }
+
+/* Skills item */
+
+
+.container-skill {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skill {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-black-700);
+
+}
+
+.outer {
+  /* border: 1px solid var(--skin-color); */
+
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px var(--bg-black-900);
+}
+
+.inner {
+  border: 2px solid var(--skin-color);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px var(--bg-black-900),
+    -0.5px -0.5px 0px var(--bg-black-900),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.inner div {
+  font-size: large;
+  font-weight: 700;
+  color: var(--text-black-700);
+
+}
+
+#number {
+  font-weight: 600;
+  color: var(--text-black-700);
+
+}
+
+circle {
+  fill: none;
+  stroke: #37bf22;
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+
+.php {
+  animation: php 2s linear forwards;
+}
+
+.js {
+  animation: js 2s linear forwards;
+}
+
+.python {
+  animation: python 2s linear forwards;
+}
+
+.django {
+  animation: django 2s linear forwards;
+}
+
+.git {
+  animation: git 2s linear forwards;
+}
+
+.java {
+  animation: java 2s linear forwards;
+}
+
+.flutter {
+  animation: flutter 2s linear forwards;
+}
+
+.mysql {
+  animation: mysql 2s linear forwards;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes php {
+  100% {
+    stroke-dashoffset: 220;
+    /* 570 - 570 * % */
+  }
+}
+
+@keyframes js {
+  100% {
+    stroke-dashoffset: 220;
+  }
+}
+
+@keyframes python {
+  100% {
+    stroke-dashoffset: 180;
+  }
+}
+
+@keyframes django {
+  100% {
+    stroke-dashoffset: 220;
+  }
+}
+
+@keyframes git {
+  100% {
+    stroke-dashoffset: 225;
+  }
+}
+
+@keyframes java {
+  100% {
+    stroke-dashoffset: 170;
+  }
+}
+
+@keyframes flutter {
+  100% {
+    stroke-dashoffset: 318;
+  }
+}
+
+@keyframes mysql {
+  100% {
+    stroke-dashoffset: 200;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*  Button download cv */
+
+.btn-cv {
+  margin-left: 40px;
+  margin-top: 70px;
+  outline: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 140px;
+  height: 50px;
+  border-radius: 0.5em;
+   overflow: hidden;
+ }
+ 
+ .btn-cv div {
+  transform: translateY(0px);
+  width: 100%;
+  background-color: #37bf22;
+ }
+ 
+
+ .svg-img {
+  position: relative;
+  left: 40px;
+}
+
+ .btn-cv,
+ .btn-cv div {
+  transition: 0.6s cubic-bezier(.16,1,.3,1);
+ }
+ 
+ .btn-cv div span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0.75em 1.125em;
+ }
+ 
+
+ .btn-cv .cv-img {
+  display: block;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .btn-cv:hover div {
+  transform: translateY(-50px);
+ }
+ 
+ .btn-cv p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+ }
+ 
+ .btn-cv:active {
+  transform: scale(0.95);
+ }

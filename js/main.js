@@ -136,7 +136,7 @@ const cards_activate = document.querySelectorAll(".service-item");
 
 cards_activate.forEach((ele) => {
     ele.onclick = function () {
-        if(this.classList.contains("active")) {
+        if (this.classList.contains("active")) {
             this.classList.remove("active");
         } else {
             cards_activate.forEach((ele) => {
@@ -149,3 +149,90 @@ cards_activate.forEach((ele) => {
 
 
 
+// Skills 
+
+
+let php = document.getElementById("php");
+let js = document.getElementById("js");
+let python = document.getElementById("python");
+let django = document.getElementById("django");
+let git = document.getElementById("git");
+let java = document.getElementById("java");
+let flutter = document.getElementById("flutter");
+let mysql = document.getElementById("mysql");
+let php_count = 0;
+let js_count = 0;
+let python_count = 0;
+let django_count = 0;
+let git_count = 0;
+let java_count = 0;
+let flutter_count = 0;
+let mysql_count = 0;
+
+setInterval(() => {
+    if (php_count == 65) {
+        clearInterval();
+    } else {
+        php_count += 1;
+        php.innerHTML = php_count + "%";
+    }
+}, 28);
+setInterval(() => {
+    if (js_count == 70) {
+        clearInterval();
+    } else {
+        js_count += 1;
+        js.innerHTML = js_count + "%";
+    }
+}, 26);
+
+setInterval(() => {
+    if (python_count == 82) {
+        clearInterval();
+    } else {
+        python_count += 1;
+        python.innerHTML = python_count + "%";
+    }
+}, 24);
+setInterval(() => {
+    if (django_count == 70) {
+        clearInterval();
+    } else {
+        django_count += 1;
+        django.innerHTML = django_count + "%";
+    }
+}, 24);
+
+setInterval(() => {
+    if (git_count == 72) {
+        clearInterval();
+    } else {
+        git_count += 1;
+        git.innerHTML = git_count + "%";
+    }
+}, 26);
+setInterval(() => {
+    if (java_count == 87) {
+        clearInterval();
+    } else {
+        java_count += 1;
+        java.innerHTML = java_count + "%";
+    }
+}, 22);
+
+setInterval(() => {
+    if (flutter_count == 40) {
+        clearInterval();
+    } else {
+        flutter_count += 1;
+        flutter.innerHTML = flutter_count + "%";
+    }
+}, 50);
+setInterval(() => {
+    if (mysql_count == 78) {
+        clearInterval();
+    } else {
+        mysql_count += 1;
+        mysql.innerHTML = mysql_count + "%";
+    }
+}, 24);
