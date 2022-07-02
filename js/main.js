@@ -146,3 +146,6 @@ cards_activate.forEach((ele) => {
         }
     };
 });
+
+
+
