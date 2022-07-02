@@ -83,7 +83,7 @@ window.onscroll = function () {
         buttons_active[0].classList.add("active");
         text_hover_active[0].classList.add("active");
     }
-    if (sY >= 2240) {
+    if (sY >= 1370) {
         nav_active.forEach((ele) => {
             ele.classList.remove("active");
         });
@@ -97,7 +97,7 @@ window.onscroll = function () {
         buttons_active[1].classList.add("active");
         text_hover_active[1].classList.add("active");
     }
-    if (sY >= 3200) {
+    if (sY >= 2400) {
         nav_active.forEach((ele) => {
             ele.classList.remove("active");
         });
@@ -111,7 +111,7 @@ window.onscroll = function () {
         buttons_active[2].classList.add("active");
         text_hover_active[2].classList.add("active");
     }
-    if (sY >= 4200) {
+    if (sY >= 3400) {
         nav_active.forEach((ele) => {
             ele.classList.remove("active");
         });
