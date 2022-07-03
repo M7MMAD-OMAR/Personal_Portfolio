@@ -15,6 +15,7 @@
   }
   .aside .nav {
     width: 100vw;
+    margin-top: 0;
   }
 
   .aside .nav li {
