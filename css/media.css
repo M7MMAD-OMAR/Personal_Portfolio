@@ -15,7 +15,6 @@
   }
   .aside .nav {
     width: 100vw;
-    margin-top: 180px;
   }
 
   .aside .nav li {
@@ -76,6 +75,7 @@
 @media only screen and (max-width: 576px)  {
   .aside {
     left: -800px;
+    min-height: 120vh;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
