@@ -1,5 +1,26 @@
 // theme dark and light mode
 
+const nav_active = document.querySelectorAll(".nav li a");
+const buttons_active = document.querySelectorAll(".button");
+const text_hover_active = document.querySelectorAll(".hover-text");
+
+const aside = document.querySelector(".aside");
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+
+const active_skill = document.querySelectorAll(".skill svg circle");
+const cards_activate = document.querySelectorAll(".experience-item");
+const active_concate = document.querySelectorAll(".card-us");
+
+let php = document.getElementById("php");
+let js = document.getElementById("js");
+let python = document.getElementById("python");
+let django = document.getElementById("django");
+let git = document.getElementById("git");
+let java = document.getElementById("java");
+let flutter = document.getElementById("flutter");
+let mysql = document.getElementById("mysql");
+
 const dayNight = document.querySelector(".day-night");
 const logo_dark = document.querySelector(".logo-img-dark");
 const logo_white = document.querySelector(".logo-img-white");
@@ -33,12 +54,6 @@ window.addEventListener("load", () => {
 
 
 // Navbar change color by scroll and click
-const nav_active = document.querySelectorAll(".nav li a");
-const buttons_active = document.querySelectorAll(".button");
-const text_hover_active = document.querySelectorAll(".hover-text");
-
-
-const active_skill = document.querySelectorAll(".skill svg circle");
 
 
 
@@ -47,12 +62,23 @@ nav_active.forEach((ele) => {
     ele.onclick = function () {
         nav_active.forEach((ele) => {
             ele.classList.remove("active");
-        })
+            
+        });
         this.classList.add("active");
+        menuBtn.classList.remove('open');
+        if(menuOpen) {
+            aside.style.left = -800+"px";
+
+        }else if (!menuBtn.classList.contains('hidden')) {
+            aside.style.left = 0+"px";
+
+        }
     };
 });
 
 window.onscroll = function () {
+// console.log(window.screenX)
+
     let sY = window.scrollY;
     if (sY <= 715) {
         nav_active.forEach((ele) => {
@@ -143,7 +169,6 @@ window.onscroll = function () {
 
 
 // Activate cards
-const cards_activate = document.querySelectorAll(".experience-item");
 
 cards_activate.forEach((ele) => {
     ele.onclick = function () {
@@ -171,14 +196,6 @@ cards_activate.forEach((ele) => {
 
 
 
-let php = document.getElementById("php");
-let js = document.getElementById("js");
-let python = document.getElementById("python");
-let django = document.getElementById("django");
-let git = document.getElementById("git");
-let java = document.getElementById("java");
-let flutter = document.getElementById("flutter");
-let mysql = document.getElementById("mysql");
 let php_count = 0;
 let js_count = 0;
 let python_count = 0;
@@ -262,7 +279,6 @@ setInterval(() => {
 
 
 
-const active_concate = document.querySelectorAll(".card-us");
 
 
 
@@ -274,6 +290,7 @@ active_concate.forEach((ele) => {
         } else {
             active_concate.forEach((ele) => {
                 ele.classList.remove("active");
+                
             })
             this.classList.add("active");
         }
@@ -281,3 +298,25 @@ active_concate.forEach((ele) => {
 });
 
 
+try {
+// toggle
+
+menuBtn.addEventListener('click', () => {
+    // if(menuBtn.classList.contains('hidden')) {
+        if(!menuOpen) {
+            aside.style.left = 0+"px";
+            menuBtn.classList.add('open');
+            menuOpen = true;
+          } else {
+            menuBtn.classList.remove('open');
+            aside.style.left = -800+"px";
+            menuOpen = false;
+          }
+
+    // }else {
+    // }
+
+});
+}catch {
+console.log("error")
+}

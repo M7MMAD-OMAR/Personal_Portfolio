@@ -1,90 +1,189 @@
-/* 
-@media (max-width:1250px) {
 
+/* Media Start */
+
+
+
+@media only screen and (min-width:  577px) and (max-width: 768px), (max-width: 576px) {
+  .aside {
+    width: 100vw;
+    left: -800px;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
   }
-  
-  @media (max-width:991px) {
-
-  }
-  
-  @media (max-width:767px) {
-
-    
-  } */
-
-
-  /* Media Start */
-  @media only screen and (max-width: 576px){
-
-
-
-
+  .aside .nav {
+    width: 100vw;
+    margin-top: 180px;
   }
 
+  .aside .nav li {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .aside .nav li a {
+    padding-top: 20px;
+  }
 
-
-  @media only screen and (min-width: 577px) and (max-width: 768px){
-    .contact .contact-info-item,
-    .contact .contact-form .col-6,
-    .portfolio .portfolio-item,
-    .about .about-content .experience,
-    .about .about-content .education,
-    .about .about-content .skills,
-    .about .about-content .personal-info {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-    .service .service-item {
-      min-width: 101%;
-      max-height:  500px;
-    }
-
-
-
+  .main-content {
+    padding-left: 0;
   }
 
 
+  .home-info h1.top {
+    font-size: 3em;
+    position: relative;
+    top: 120px;
+    width: 20%;
+  }
+  .home-info h1.bottom {
+    font-size: 3em;
+    bottom: 68px;
+  }
 
-  @media only screen and (min-width: 769px) and (max-width: 992px){
+  .home-img img {
+    top: -200px;
+    right: 35px;
+    width: 250px;
+  }
 
-    .contact .contact-info-item,
-    .portfolio .portfolio-item,
-    .service .service-item {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    .home .home-info {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-    .home .home-img {
-      display: none;
-    }
+  .style-mode .day-night {
+    top: 17px !important;
+  }
+
+  .about .about-content .personal-info .info-item {
+    width: 100%;
+  }
+  .experience-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact {
+    padding-bottom: 100px;
+  }
+  .follow-us {
+    margin-bottom: 30px;
+  }
+  .menu-btn {
+    display: inline-block !important; 
+  }
+
+}
 
 
+@media only screen and (max-width: 576px)  {
+  .aside {
+    left: -800px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+  .home-img img {
+    right: 20px;
+    width: 150px;
+    top: -150px;
+
+  }
+
+  .home-info h1.top {
+    font-size: 2em;
+  }
+  .home-info h1.bottom {
+    font-size: 2em;
+    bottom: 120px;
+  }
+  .contact .contact-form .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
 
 
-  @media only screen and (min-width: 993px) and (max-width: 1200px) {
-    .aside {
-      left: -270px;
-    }
-    .main-content {
-      padding-left: 0;
-    }
-    .section { 
-      padding-left: 60px;
-    }
-    .about .about-content .personal-info .info-item p span {
-      display: block;
-      margin-left: 0;
-    }
+}
 
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .aside {
+    justify-content: flex-end;
+    padding-right: 0;
+    left: -205px;
+  }
+  .aside .logo,
+  .aside .nav li a span {
+    display: none !important;
+  }
+  .aside .nav li a i {
+    margin-right: 8px;
+  }
+  .main-content {
+    padding-left: 50px;
+  }
 
+  .home-info h1.top {
+    font-size: 3.5em;
+  }
+  .home-info h1.bottom {
+    font-size: 4em;
+    bottom: 80px;
+  }
 
+  .home-img img {
+    right: 65px;
+    width: 250px;
+    top: -150px;
+
+  }
+  .experience-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .contact {
+    padding-bottom: 100px;
   }
 
 
-  /* Media End */
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .aside {
+    justify-content: flex-end;
+    padding-right: 0;
+    left: -205px;
+  }
+  .aside .logo,
+  .aside .nav li a span {
+    display: none !important;
+  }
+  .aside .nav li a i {
+    margin-right: 8px;
+  }
+  .home-info h1.top {
+    font-size: 4em;
+  }
+  .home-info h1.bottom {
+    font-size: 4em;
+    bottom: 60px;
+  }
+
+  .home-img img {
+    width: 300px;
+    bottom: -150px;
+  }
+
+  .main-content {
+    padding-left: 50px;
+  }
+  .section {
+    padding-left: 60px;
+  }
+
+  .contact {
+    padding-bottom: 100px;
+  }
+}
+
+/* Media End */
