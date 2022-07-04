@@ -529,23 +529,24 @@
 
 
 
-
+<!--  -->
 
           </div>
           <!-- contact start -->
           <div class="row">
+            <form onsubmit="sendEmail(); reset(); return false; required">
             <div class="contact-form padd-15">
               <div class="row">
                 <div class="form-item col-6 padd-15">
                   <div class="input-group">
-                    <input required="" type="text" name="text" autocomplete="off" class="input" />
+                    <input required="" type="text" name="text" autocomplete="off" class="input" id="name" />
                     <label class="user-label">Name</label>
                   </div>
                 </div>
                 <div class="form-item col-6 padd-15">
                   <div class="form-group">
                     <div class="input-group">
-                      <input required="" name="text" autocomplete="off" class="input" />
+                      <input required="" name="text" autocomplete="off" class="input" id="email" />
                       <label class="user-label">Email</label>
                     </div>
                   </div>
@@ -555,7 +556,7 @@
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
                     <div class="input-group">
-                      <input required="" type="text" name="text" autocomplete="off" class="input" />
+                      <input required="" type="text" name="text" autocomplete="off" class="input"/>
                       <label class="user-label">Subject</label>
                     </div>
                   </div>
@@ -565,7 +566,7 @@
                 <div class="form-item col-12 padd-15">
                   <div class="form-group">
                     <div class="input-group">
-                      <textarea name="textarea" autocomplete="off" class="input"></textarea>
+                      <textarea name="textarea" autocomplete="off" class="input" id="message"></textarea>
                       <label class="user-label">Message</label>
                     </div>
                   </div>
@@ -579,6 +580,7 @@
                 </p>
               </div>
             </div>
+          </form>
           </div>
           <!-- contact end -->
 
@@ -598,6 +600,7 @@
   <!-- JS File -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
     referrerpolicy="no-referrer"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="js/main.js"></script>
 </body>
 
