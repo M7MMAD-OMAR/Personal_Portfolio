@@ -175,4 +175,19 @@
   }
 }
 
+
+/* @media only screen and (min-width: 1201px) and (max-width: 1350px) {
+  .home-info h1.top {
+    font-size: 4em;
+  }
+  .home-info h1.bottom {
+    font-size: 4em;
+    bottom: 60px;
+  }
+
+  .home-img img {
+    width: 300px;
+    bottom: -150px;
+  }
+} */
 /* Media End */
