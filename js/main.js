@@ -326,16 +326,16 @@ console.log("error")
 
 // Send message by email
 
-// function sendEmail() {
-//     Email.send({
-//         SecureToken : "a9f610d1-1f39-4e4c-9295-b2df961fd87a",
-//         To : 'muhammadaaa727@gmail.com',
-//         From : document.getElementById("email").value,
-//         Subject : "New Contact",
-//         Body : "Name: "+ document.getElementById("name").value
-//         + "<br> Email: "+ document.getElementById("email").value
-//         + "<br> Message: "+ document.getElementById("message").value,
-//     }).then(
-//       message => alert("Message Sent Succesuflly")
-//     );
-// }
+function sendEmail() {
+    Email.send({
+        SecureToken : "a9f610d1-1f39-4e4c-9295-b2df961fd87a",
+        To : 'muhammadaaa727@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact",
+        Body : "Name: "+ document.getElementById("name").value
+        + "<br> Email: "+ document.getElementById("email").value
+        + "<br> Message: "+ document.getElementById("message").value,
+    }).then(
+      message => alert("Message Sent Successfully")
+    );
+}
