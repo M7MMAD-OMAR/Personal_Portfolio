@@ -206,7 +206,7 @@ let flutter_count = 0;
 let mysql_count = 0;
 
 setInterval(() => {
-    if (php_count == 65) {
+    if (php_count === 65) {
         clearInterval();
     } else {
         php_count += 1;
@@ -214,7 +214,7 @@ setInterval(() => {
     }
 }, 28);
 setInterval(() => {
-    if (js_count == 70) {
+    if (js_count === 80) {
         clearInterval();
     } else {
         js_count += 1;

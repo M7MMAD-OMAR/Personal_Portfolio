@@ -948,6 +948,57 @@ input:valid ~ label {
 }
 
 
+
+
+
+.cards-support {
+  display: flex;
+  width: 90vw;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+/* From uiverse.io by @martinval9 */
+.card-support {
+  width: 250px;
+  height: 350px;
+  margin: 3rem;
+  background: rgb(40,40,55);
+  background: linear-gradient(344deg, rgba(40,40,55,1) 0%, rgba(16,16,18,1) 50%);
+  box-shadow: 4px 6px 14px #00000036;
+  border-radius: 30px;
+  color: #F9F9F9;
+  padding: 16px;
+  transition: all .3s;
+}
+
+.card-support:hover {
+  margin-top: 30px;
+}
+
+
+.card-support:focus {
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Skills item */
 
 .container-skill {
