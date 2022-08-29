@@ -964,8 +964,9 @@ input:valid ~ label {
   width: 250px;
   height: 350px;
   margin: 3rem;
-  background: rgb(40,40,55);
-  background: linear-gradient(344deg, rgba(40,40,55,1) 0%, rgba(16,16,18,1) 50%);
+  background-color: var(--bg-black-100);
+  /*background: rgb(40,40,55);*/
+  background: linear-gradient(344deg, var(--bg-black-900), var(--bg-black-100) 50%);
   box-shadow: 4px 6px 14px #00000036;
   border-radius: 30px;
   color: #F9F9F9;
